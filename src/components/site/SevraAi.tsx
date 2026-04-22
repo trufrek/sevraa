@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Brain, Activity, AlertTriangle, Stethoscope } from "lucide-react";
+import sevraBrain from "@/assets/sevra-ai-brain.jpeg";
 
 const features = [
   { icon: Activity, title: "Real-time Predictions", desc: "Forecasts patient deterioration up to 6 hours ahead with calibrated confidence." },
@@ -35,7 +36,7 @@ export const SevraAi = () => {
         </motion.div>
 
         <div className="grid lg:grid-cols-5 gap-8 items-center">
-          {/* Neural visualization */}
+          {/* Neural visualization with SEVRA AI brain core */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -44,6 +45,22 @@ export const SevraAi = () => {
             className="lg:col-span-3 relative aspect-[4/3] glass-panel-strong rounded-3xl overflow-hidden scan-line"
           >
             <NeuralSvg />
+
+            {/* Brain core — pulsing centerpiece */}
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+              {/* Halo */}
+              <div className="absolute h-72 w-72 rounded-full bg-primary/30 blur-[80px] animate-pulse-glow" />
+              <div className="absolute h-56 w-56 rounded-full bg-secondary/20 blur-[60px]" />
+              <motion.img
+                src={sevraBrain}
+                alt="SEVRA AI — neural core"
+                animate={{ y: [0, -8, 0] }}
+                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                className="relative h-[78%] w-auto object-contain [mix-blend-mode:screen] drop-shadow-[0_0_40px_hsl(var(--primary)/0.6)]"
+                loading="lazy"
+              />
+            </div>
+
             <div className="absolute top-4 left-4 chip">
               <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
               Inference live
