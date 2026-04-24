@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
-import { Layers3, GitBranch, Workflow, Database } from "lucide-react";
+import { Layers3, GitBranch, Workflow, Database, ExternalLink, PlayCircle } from "lucide-react";
 import osDashboard from "@/assets/sevra-os-dashboard.png";
+
+const SEVRA_OS_DEMO_URL = "https://id-preview--391dd5e6-1f0b-4217-b2c9-56e35e831c46.lovable.app";
 
 const items = [
   { icon: GitBranch, title: "Data Orchestration", desc: "Streams, batch and event pipelines unified under one schema." },
