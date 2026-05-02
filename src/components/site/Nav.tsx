@@ -63,13 +63,13 @@ export const Nav = () => {
       }`}
     >
       <div className="container mx-auto px-6">
-        <div
-          className={`flex items-center justify-between rounded-2xl px-4 md:px-6 py-3 transition-all duration-500 border ${
-            scrolled
-              ? "border-primary/30 glass-panel-strong shadow-[0_0_22px_hsl(var(--primary)/0.35)]"
-              : "border-primary/20 bg-transparent backdrop-blur-md shadow-[0_0_12px_hsl(var(--primary)/0.12)]"
-          }`}
-        >
+  <div
+    className={`flex items-center justify-between rounded-2xl px-4 md:px-6 py-3 border backdrop-blur-md transition-all duration-700 ease-out ${
+      scrolled
+        ? "border-primary/35 bg-background/70 shadow-[0_0_22px_hsl(var(--primary)/0.22)]"
+        : "border-primary/20 bg-background/20 shadow-[0_0_10px_hsl(var(--primary)/0.10)]"
+    }`}
+  >
           <Link to="/" className="group flex items-center" aria-label="mycare × SEVRA AI">
             <img
               src={partnerLogo}
