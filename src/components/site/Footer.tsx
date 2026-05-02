@@ -64,7 +64,7 @@ export const Footer = () => {
                 aria-label="Instagram"
                 className="grid h-9 w-9 place-items-center rounded-lg border border-border/60 bg-card/40 text-muted-foreground backdrop-blur transition-all hover:border-primary/60 hover:text-primary"
               >
-                <Instaram className="h-4 w-4" />
+                <Instagram className="h-4 w-4" />
               </a>
               <a
                 href="#"
@@ -112,7 +112,7 @@ export const Footer = () => {
             <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
               <li className="flex items-start gap-2.5">
                 <Mail className="mt-0.5 h-4 w-4 text-primary/70" />
-                <a href="mailto:mainakchaks@gmiail.com" className="hover:text-foreground transition-colors">
+                <a href="mailto:mainakchaks@gmail.com" className="hover:text-foreground transition-colors">
                   mainakchaks@gmail.com
                 </a>
               </li>
