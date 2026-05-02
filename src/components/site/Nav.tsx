@@ -62,10 +62,11 @@ export const Nav = () => {
         scrolled ? "py-3" : "py-5"
       }`}
     >
-      <div className="container mx-auto px-6">
-        <div
-  className={`flex items-center justify-between rounded-2xl px-4 md:px-6 py-3 transition-all duration-500 ${
-    scrolled ? "glass-panel-strong" : "bg-transparent"
+      <div
+  className={`flex items-center justify-between rounded-2xl px-4 md:px-6 py-3 transition-all duration-500 border ${
+    scrolled
+      ? "border-primary/30 glass-panel-strong shadow-[0_0_22px_hsl(var(--primary)/0.35)]"
+      : "border-primary/20 bg-transparent backdrop-blur-md shadow-[0_0_12px_hsl(var(--primary)/0.12)]"
   }`}
 >
           <Link to="/" className="group flex items-center" aria-label="mycare × SEVRA AI">
