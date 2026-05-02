@@ -28,7 +28,7 @@ export const Cta = () => {
 
             <div className="flex flex-col gap-4">
               <a
-                href="mailto:hello@sevra.in"
+                href="mailto:Mainakchaks@gmail.com"
                 className="group flex items-center justify-between gap-4 rounded-2xl bg-gradient-primary px-7 py-5 text-primary-foreground shadow-elegant hover:scale-[1.02] transition-transform"
               >
                 <div className="flex items-center gap-3">
@@ -41,14 +41,14 @@ export const Cta = () => {
                 <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </a>
               <a
-                href="mailto:Mainakchaks@gmail.com"
+                href="mailto:Hello@serva.in"
                 className="group flex items-center justify-between gap-4 rounded-2xl border border-primary/30 bg-primary/5 px-7 py-5 hover:bg-primary/10 transition-colors backdrop-blur"
               >
                 <div className="flex items-center gap-3">
                   <Handshake className="h-5 w-5 text-primary" />
                   <div>
                     <div className="font-display font-semibold">Partner with SEVRA</div>
-                    <div className="text-xs text-muted-foreground">Hospitals Â· Health systems Â· OEMs</div>
+                    <div className="text-xs text-muted-foreground">Hospitals · Health systems · OEMs</div>
                   </div>
                 </div>
                 <ArrowRight className="h-5 w-5 text-primary group-hover:translate-x-1 transition-transform" />
