@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone, Linkedin, Twitter, Github } from "lucide-react";
+import { Mail, MapPin, Phone, Linkedin, Instagram, Github } from "lucide-react";
 import { Link } from "react-router-dom";
 import sevraAiLogo from "@/assets/sevra-ai-logo.jpeg";
 
@@ -51,32 +51,27 @@ export const Footer = () => {
 
             <p className="mt-6 max-w-md text-sm leading-relaxed text-muted-foreground">
               SEVRA is not software. It's the infrastructure layer powering the
-              future of healthcare — unifying AI, operating systems, real-time
+              future of healthcare â€” unifying AI, operating systems, real-time
               visualization, and proprietary medical hardware into a single
               intelligent fabric.
             </p>
 
+            <p> â°refers to build or initiative stages </p>
+
             <div className="mt-6 flex items-center gap-3">
+              <a
+                href="https://www.instagram.com/getmycare/"
+                aria-label="Instagram"
+                className="grid h-9 w-9 place-items-center rounded-lg border border-border/60 bg-card/40 text-muted-foreground backdrop-blur transition-all hover:border-primary/60 hover:text-primary"
+              >
+                <Instaram className="h-4 w-4" />
+              </a>
               <a
                 href="#"
                 aria-label="LinkedIn"
                 className="grid h-9 w-9 place-items-center rounded-lg border border-border/60 bg-card/40 text-muted-foreground backdrop-blur transition-all hover:border-primary/60 hover:text-primary"
               >
-                <Linkedin className="h-4 w-4" />
-              </a>
-              <a
-                href="#"
-                aria-label="Twitter"
-                className="grid h-9 w-9 place-items-center rounded-lg border border-border/60 bg-card/40 text-muted-foreground backdrop-blur transition-all hover:border-primary/60 hover:text-primary"
-              >
-                <Twitter className="h-4 w-4" />
-              </a>
-              <a
-                href="#"
-                aria-label="GitHub"
-                className="grid h-9 w-9 place-items-center rounded-lg border border-border/60 bg-card/40 text-muted-foreground backdrop-blur transition-all hover:border-primary/60 hover:text-primary"
-              >
-                <Github className="h-4 w-4" />
+                <LinkedIn className="h-4 w-4" />
               </a>
             </div>
           </div>
@@ -117,17 +112,23 @@ export const Footer = () => {
             <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
               <li className="flex items-start gap-2.5">
                 <Mail className="mt-0.5 h-4 w-4 text-primary/70" />
-                <a href="mailto:hello@sevra.ai" className="hover:text-foreground transition-colors">
-                  hello@sevra.ai
+                <a href="mailto:mainakchaks@gmiail.com" className="hover:text-foreground transition-colors">
+                  mainakchaks@gmail.com
+                </a>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <Mail className="mt-0.5 h-4 w-4 text-primary/70" />
+                <a href="mailto:hello@sevra.in" className="hover:text-foreground transition-colors">
+                  hello@sevra.in
                 </a>
               </li>
               <li className="flex items-start gap-2.5">
                 <Phone className="mt-0.5 h-4 w-4 text-primary/70" />
-                <span>+1 (415) 555-0142</span>
+                <span>+91 9101613924</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <MapPin className="mt-0.5 h-4 w-4 text-primary/70" />
-                <span>HQ · San Francisco · Bengaluru</span>
+                <span>HQ Â· Office No. 604, 6th Floor, Millennium Tower, S. No 36/2, Maruti Chowk, Mumbai-Pune-Bengaluru Highway, next to Tata Showroom, Baner, Pune, Maharashtra, 411045.</span>
               </li>
             </ul>
 
@@ -136,7 +137,7 @@ export const Footer = () => {
                 Compliance
               </div>
               <div className="mt-2 flex flex-wrap gap-1.5">
-                {["HIPAA", "SOC 2", "ISO 27001", "GDPR"].map((c) => (
+                {["HIPAAâ°", "SOC 2â°", "ISO 27001â°", "GDPRâ°"].map((c) => (
                   <span
                     key={c}
                     className="rounded-md border border-primary/20 bg-primary/5 px-2 py-0.5 text-[10px] font-medium text-foreground/80"
@@ -155,7 +156,7 @@ export const Footer = () => {
         {/* Bottom row */}
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
           <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-            © {year} SEVRA Technologies · All rights reserved
+            Â© {year} Sevra Technologies Â· All rights reserved
           </div>
           <div className="flex items-center gap-5 text-xs text-muted-foreground">
             <Link to="/policies#privacy" className="hover:text-foreground transition-colors">Privacy</Link>
@@ -164,7 +165,7 @@ export const Footer = () => {
             <Link to="/policies#cookies" className="hover:text-foreground transition-colors">Cookies</Link>
           </div>
           <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-primary/70">
-            v2.6.0 · Build 2026.04
+            v0.1.1 Â· Build 2026.04
           </div>
         </div>
       </div>
