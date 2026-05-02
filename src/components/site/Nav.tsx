@@ -67,7 +67,7 @@ export const Nav = () => {
     className={`flex items-center justify-between rounded-2xl px-4 md:px-6 py-3 border backdrop-blur-md transition-all duration-700 ease-out ${
       scrolled
         ? "border-primary/45 bg-background/80 shadow-[0_0_33px_hsl(var(--primary)/0.33)]"
-        : "border-primary/10 bg-background/10 shadow-[0_0_10px_hsl(var(--primary)/0.10)]"
+        : "border-primary/5 bg-background/6 shadow-[0_0_10px_hsl(var(--primary)/0.10)]"
     }`}
   >
           <Link to="/" className="group flex items-center" aria-label="mycare × SEVRA AI">
