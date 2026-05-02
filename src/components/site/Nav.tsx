@@ -64,10 +64,12 @@ export const Nav = () => {
     >
       <div className="container mx-auto px-6">
         <div
-          className={`flex items-center justify-between rounded-2xl px-4 md:px-6 py-3 transition-all duration-500 ${
-            scrolled ? "glass-panel-strong" : "bg-transparent"
-          }`}
-        >
+  className={`flex items-center justify-between rounded-2xl px-4 md:px-6 py-3 transition-all duration-500 border border-white/10 shadow-[0_0_25px_rgba(0,255,255,0.15)] ${
+    scrolled
+      ? "glass-panel-strong shadow-[0_0_30px_rgba(0,255,255,0.22)]"
+      : "bg-black/10 backdrop-blur-xl"
+  }`}
+>
           <Link to="/" className="group flex items-center" aria-label="mycare × SEVRA AI">
             <img
               src={partnerLogo}
