@@ -62,7 +62,6 @@ export const Nav = () => {
         scrolled ? "py-3" : "py-5"
       }`}
     >
-      >
       <div className="container mx-auto px-6">
         <div
           className={`flex items-center justify-between rounded-2xl px-4 md:px-6 py-3 transition-all duration-500 border ${
