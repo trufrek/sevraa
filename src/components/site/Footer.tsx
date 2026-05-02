@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone, Linkedin, Instagram, Github } from "lucide-react";
+import { Mail, MapPin, Phone, Linkedin, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
 import sevraAiLogo from "@/assets/sevra-ai-logo.jpeg";
 
@@ -10,6 +10,7 @@ export const Footer = () => {
       {/* Ambient backdrop */}
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute left-1/2 top-0 h-[400px] w-[800px] -translate-x-1/2 rounded-full bg-primary/5 blur-[120px]" />
+
         <div
           className="absolute inset-0 opacity-[0.03]"
           style={{
@@ -21,13 +22,14 @@ export const Footer = () => {
       </div>
 
       <div className="container mx-auto px-6">
-        {/* Top: Brand + columns */}
+        {/* Top Section */}
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-12">
-          {/* Brand block */}
+          {/* Brand */}
           <div className="lg:col-span-5">
             <div className="flex items-start gap-4">
               <div className="relative">
                 <div className="absolute -inset-3 rounded-2xl bg-primary/20 blur-2xl" />
+
                 <img
                   src={sevraAiLogo}
                   alt="SEVRA AI logo"
@@ -35,13 +37,16 @@ export const Footer = () => {
                   loading="lazy"
                 />
               </div>
+
               <div>
                 <div className="font-display text-2xl font-bold tracking-tight">
                   SEVRA <span className="text-primary">AI</span>
                 </div>
+
                 <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
                   Healthcare Infrastructure
                 </div>
+
                 <div className="mt-3 inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.2em] text-primary">
                   <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-primary" />
                   Systems Online
@@ -50,28 +55,34 @@ export const Footer = () => {
             </div>
 
             <p className="mt-6 max-w-md text-sm leading-relaxed text-muted-foreground">
-              SEVRA is not software. It's the infrastructure layer powering the
-              future of healthcare â€” unifying AI, operating systems, real-time
-              visualization, and proprietary medical hardware into a single
-              intelligent fabric.
+              SEVRA is not software. It is the infrastructure layer powering the
+              future of healthcare — unifying AI, operating systems, real-time
+              visualization, and proprietary medical hardware into one
+              intelligent ecosystem.
             </p>
 
-            <p> â°refers to build or initiative stages </p>
+            <p className="mt-3 text-xs text-muted-foreground">
+              ⁰ refers to build or initiative stages
+            </p>
 
+            {/* Social */}
             <div className="mt-6 flex items-center gap-3">
               <a
                 href="https://www.instagram.com/getmycare/"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Instagram"
                 className="grid h-9 w-9 place-items-center rounded-lg border border-border/60 bg-card/40 text-muted-foreground backdrop-blur transition-all hover:border-primary/60 hover:text-primary"
               >
                 <Instagram className="h-4 w-4" />
               </a>
+
               <a
                 href="#"
                 aria-label="LinkedIn"
                 className="grid h-9 w-9 place-items-center rounded-lg border border-border/60 bg-card/40 text-muted-foreground backdrop-blur transition-all hover:border-primary/60 hover:text-primary"
               >
-                <LinkedIn className="h-4 w-4" />
+                <Linkedin className="h-4 w-4" />
               </a>
             </div>
           </div>
@@ -81,6 +92,7 @@ export const Footer = () => {
             <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-primary/80">
               Platform
             </div>
+
             <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
               <li><a href="#ai" className="hover:text-foreground transition-colors">SEVRA AI</a></li>
               <li><a href="#os" className="hover:text-foreground transition-colors">SEVRA OS</a></li>
@@ -95,6 +107,7 @@ export const Footer = () => {
             <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-primary/80">
               Company
             </div>
+
             <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
               <li><a href="/#vision" className="hover:text-foreground transition-colors">Vision</a></li>
               <li><Link to="/insights" className="hover:text-foreground transition-colors">Insights</Link></li>
@@ -109,40 +122,55 @@ export const Footer = () => {
             <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-primary/80">
               Contact
             </div>
+
             <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
               <li className="flex items-start gap-2.5">
                 <Mail className="mt-0.5 h-4 w-4 text-primary/70" />
-                <a href="mailto:mainakchaks@gmail.com" className="hover:text-foreground transition-colors">
+                <a
+                  href="mailto:mainakchaks@gmail.com"
+                  className="hover:text-foreground transition-colors"
+                >
                   mainakchaks@gmail.com
                 </a>
               </li>
+
               <li className="flex items-start gap-2.5">
                 <Mail className="mt-0.5 h-4 w-4 text-primary/70" />
-                <a href="mailto:hello@sevra.in" className="hover:text-foreground transition-colors">
+                <a
+                  href="mailto:hello@sevra.in"
+                  className="hover:text-foreground transition-colors"
+                >
                   hello@sevra.in
                 </a>
               </li>
+
               <li className="flex items-start gap-2.5">
                 <Phone className="mt-0.5 h-4 w-4 text-primary/70" />
                 <span>+91 9101613924</span>
               </li>
+
               <li className="flex items-start gap-2.5">
                 <MapPin className="mt-0.5 h-4 w-4 text-primary/70" />
-                <span>HQ Â· Office No. 604, 6th Floor, Millennium Tower, S. No 36/2, Maruti Chowk, Mumbai-Pune-Bengaluru Highway, next to Tata Showroom, Baner, Pune, Maharashtra, 411045.</span>
+                <span>
+                  HQ · Office No. 604, 6th Floor, Millennium Tower,
+                  Baner, Pune, Maharashtra, 411045
+                </span>
               </li>
             </ul>
 
+            {/* Compliance */}
             <div className="mt-6 rounded-xl border border-border/60 bg-card/40 p-4 backdrop-blur">
               <div className="font-mono text-[9px] uppercase tracking-[0.3em] text-primary/80">
                 Compliance
               </div>
+
               <div className="mt-2 flex flex-wrap gap-1.5">
-                {["HIPAAâ°", "SOC 2â°", "ISO 27001â°", "GDPRâ°"].map((c) => (
+                {["HIPAA⁰", "SOC 2⁰", "ISO 27001⁰", "GDPR⁰"].map((item) => (
                   <span
-                    key={c}
+                    key={item}
                     className="rounded-md border border-primary/20 bg-primary/5 px-2 py-0.5 text-[10px] font-medium text-foreground/80"
                   >
-                    {c}
+                    {item}
                   </span>
                 ))}
               </div>
@@ -153,19 +181,29 @@ export const Footer = () => {
         {/* Divider */}
         <div className="my-10 h-px w-full bg-gradient-to-r from-transparent via-border to-transparent" />
 
-        {/* Bottom row */}
+        {/* Bottom */}
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
           <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-            Â© {year} Sevra Technologies Â· All rights reserved
+            © {year} Sevra Technologies · All rights reserved
           </div>
+
           <div className="flex items-center gap-5 text-xs text-muted-foreground">
-            <Link to="/policies#privacy" className="hover:text-foreground transition-colors">Privacy</Link>
-            <Link to="/policies#terms" className="hover:text-foreground transition-colors">Terms</Link>
-            <Link to="/policies#security" className="hover:text-foreground transition-colors">Security</Link>
-            <Link to="/policies#cookies" className="hover:text-foreground transition-colors">Cookies</Link>
+            <Link to="/policies#privacy" className="hover:text-foreground transition-colors">
+              Privacy
+            </Link>
+            <Link to="/policies#terms" className="hover:text-foreground transition-colors">
+              Terms
+            </Link>
+            <Link to="/policies#security" className="hover:text-foreground transition-colors">
+              Security
+            </Link>
+            <Link to="/policies#cookies" className="hover:text-foreground transition-colors">
+              Cookies
+            </Link>
           </div>
+
           <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-primary/70">
-            v0.1.1 Â· Build 2026.04
+            v0.1.1 · Build 2026.04
           </div>
         </div>
       </div>
