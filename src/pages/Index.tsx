@@ -6,7 +6,6 @@ import { SevraOs } from "@/components/site/SevraOs";
 import { SevraMobile } from "@/components/site/SevraMobile";
 import { Helios } from "@/components/site/Helios";
 import { Imcs } from "@/components/site/Imcs";
-import { Showcase } from "@/components/site/Showcase";
 import { Security } from "@/components/site/Security";
 import { UseCases } from "@/components/site/UseCases";
 import { Vision } from "@/components/site/Vision";
@@ -27,7 +26,6 @@ const Index = () => {
       <SevraMobile />
       <Helios />
       <Imcs />
-      <Showcase />
       <Security />
       <UseCases />
       <Vision />
