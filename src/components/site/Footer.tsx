@@ -152,8 +152,8 @@ export const Footer = () => {
               <li className="flex items-start gap-2.5">
                 <MapPin className="mt-0.5 h-4 w-4 text-primary/70" />
                 <span>
-                  · Office No. 604, 6th Floor, Millennium Tower,
-                  Baner, Pune, Maharashtra, 411045
+                  · 6th Floor, Millennium Tower, S. No 36/2, Maruti Chowk, 
+                  Mumbai-Pune- Bengaluru Highway, Baner, Pune, Maharashtra, 411045
                 </span>
               </li>
             </ul>
