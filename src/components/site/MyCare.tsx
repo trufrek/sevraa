@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 import mycareLogo from "@/assets/mycare-logo.jpeg";
 
 const MYCARE_URL =
-  "https://mycare-hub.vercel.app";
+  "https://mycare.sevra.in";
 
 export const MyCare = () => {
   return (
